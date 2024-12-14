@@ -1,1 +1,27 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';/*# sourceMappingURL=index.css.map */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+}
+.header .open-mobile-svg {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+
+.hero {
+  background-image: url("../src/images/Hero-mobile-1x.jpg");
+  height: 580px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.hero .hero-content-box {
+  width: 320px;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

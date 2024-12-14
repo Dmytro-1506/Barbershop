@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    .open-mobile-svg {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+    }
+}
