@@ -1,16 +1,11 @@
 .about {
-    max-width: 480px;
     border-color: $background-color-1;
-    padding-top: 84px;
-    padding-bottom: 84px;
-    padding-left: 31px;
-    padding-right: 31px;
 
-    .about-content-box {
+    .about__content-box {
         display: flex;
         flex-direction: column;
         
-        .about-subtitle {
+        .about__subtitle {
             @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, null);
             margin-bottom: 20px;
             &::before {
@@ -25,24 +20,24 @@
             }
         }
         
-        .about-title {
+        .about__title {
             display: inline-block;
             width: 305px;
             @include font($font-Raleway, $dark-text-svg-color, 700, 28px, 1.18, 0.05);
             margin-bottom: 20px;
         }
         
-        .about-text-1 {
+        .about__text-1 {
             @include font($font-Open-Sans, $text-color-4, 400, 16px, 1.62, 0.02);
             margin-bottom: 20px;
         }
         
-        .about-description {
+        .about__description {
             @include font($font-Open-Sans, $text-color-4, 400, 14px, 1.86, 0.02);
             margin-bottom: 40px;
         }
         
-        .about-button {
+        .about__button {
             margin-left: 0;
             width: 160px;
             height: 40px;

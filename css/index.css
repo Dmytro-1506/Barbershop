@@ -32,6 +32,15 @@ button {
   cursor: pointer;
 }
 
+section {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
 .header {
   position: absolute;
   padding-left: 30px;
@@ -39,13 +48,13 @@ button {
   padding-top: 40px;
   width: 100%;
 }
-.header .header-container {
+.header .header__container {
   max-width: 420px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
-.header .open-mobile-svg {
+.header .header__open-mobile-svg {
   width: 40px;
   height: 40px;
   align-self: center;
@@ -60,11 +69,11 @@ button {
   align-items: center;
   padding-left: 30px;
 }
-.hero .hero-content-box {
+.hero .hero__content-box {
   width: 320px;
   color: #fff;
 }
-.hero .hero-content-box .hero-subtitle {
+.hero .hero__content-box .hero__subtitle {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
   font-weight: 600;
@@ -73,7 +82,7 @@ button {
   letter-spacing: 0.1;
   margin-bottom: 20px;
 }
-.hero .hero-content-box .hero-subtitle::before {
+.hero .hero__content-box .hero__subtitle::before {
   display: inline-block;
   vertical-align: super;
   contain: content;
@@ -83,7 +92,7 @@ button {
   background-color: rgba(157, 164, 189, 0.6);
   margin-right: 20px;
 }
-.hero .hero-content-box .hero-title {
+.hero .hero__content-box .hero__title {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 700;
@@ -92,7 +101,7 @@ button {
   letter-spacing: 0.05;
   margin-bottom: 20px;
 }
-.hero .hero-content-box .hero-text {
+.hero .hero__content-box .hero__text {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
   font-weight: 400;
@@ -102,18 +111,13 @@ button {
 }
 
 .about {
-  max-width: 480px;
   border-color: #ffffff;
-  padding-top: 84px;
-  padding-bottom: 84px;
-  padding-left: 31px;
-  padding-right: 31px;
 }
-.about .about-content-box {
+.about .about__content-box {
   display: flex;
   flex-direction: column;
 }
-.about .about-content-box .about-subtitle {
+.about .about__content-box .about__subtitle {
   font-family: "Open Sans", sans-serif;
   color: rgb(48, 48, 48);
   font-weight: 600;
@@ -121,7 +125,7 @@ button {
   line-height: 1.36;
   margin-bottom: 20px;
 }
-.about .about-content-box .about-subtitle::before {
+.about .about__content-box .about__subtitle::before {
   display: inline-block;
   vertical-align: super;
   contain: content;
@@ -131,7 +135,7 @@ button {
   background-color: rgb(48, 48, 48);
   margin-right: 20px;
 }
-.about .about-content-box .about-title {
+.about .about__content-box .about__title {
   display: inline-block;
   width: 305px;
   font-family: "Raleway", sans-serif;
@@ -142,7 +146,7 @@ button {
   letter-spacing: 0.05;
   margin-bottom: 20px;
 }
-.about .about-content-box .about-text-1 {
+.about .about__content-box .about__text-1 {
   font-family: "Open Sans", sans-serif;
   color: rgb(85, 85, 85);
   font-weight: 400;
@@ -151,7 +155,7 @@ button {
   letter-spacing: 0.02;
   margin-bottom: 20px;
 }
-.about .about-content-box .about-description {
+.about .about__content-box .about__description {
   font-family: "Open Sans", sans-serif;
   color: rgb(85, 85, 85);
   font-weight: 400;
@@ -160,7 +164,21 @@ button {
   letter-spacing: 0.02;
   margin-bottom: 40px;
 }
-.about .about-content-box .about-button {
+.about .about__content-box .about__button {
+  margin-left: 0;
+  width: 160px;
+  height: 40px;
+  border: 1px solid rgb(255, 108, 0);
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09;
+}
+
+.prices .prices__content-box .prices__button {
   margin-left: 0;
   width: 160px;
   height: 40px;
