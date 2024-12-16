@@ -8,3 +8,12 @@ section {
     padding-left: 31px;
     padding-right: 31px;
 }
+
+button {
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid $accent-color-orange;
+    border-radius: 25px;
+    @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
+}

@@ -1,26 +1,31 @@
 .prices {
+    background: url(../src/images/Prices-big.jpeg);
 
     .prices__content-box {
+
         
         .prices__subtitle {}
         
         .prices__title {}
         
-        .prices__services {}
-        
-        .prices__services-item {}
-        
-        .prices__service-name {}
-        
-        .prices__service-price {}
+        .prices__services {
+            background-color: $background-color-gradient;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 20px;
+        }
+        .prices__services-item {
+            display: flex;
+            width: 100%;
+
+                .prices__service-name {}
+                
+                .prices__service-price {}
+            }
         
         .prices__button {
-            margin-left: 0;
-            width: 160px;
-            height: 40px;
-            border: 1px solid $accent-color-orange;
-            border-radius: 25px;
-            @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
+            color: $text-color-2;
         }
     }
 }

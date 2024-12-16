@@ -41,6 +41,20 @@ section {
   padding-right: 31px;
 }
 
+button {
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 108, 0);
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09;
+}
+
 .header {
   position: absolute;
   padding-left: 30px;
@@ -178,16 +192,20 @@ section {
   letter-spacing: 0.09;
 }
 
+.prices {
+  background: url(../src/images/Prices-big.jpeg);
+}
+.prices .prices__content-box .prices__services {
+  background-color: linear-gradient(rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.prices .prices__content-box .prices__services-item {
+  display: flex;
+  width: 100%;
+}
 .prices .prices__content-box .prices__button {
-  margin-left: 0;
-  width: 160px;
-  height: 40px;
-  border: 1px solid rgb(255, 108, 0);
-  border-radius: 25px;
-  font-family: "Open Sans", sans-serif;
-  color: rgb(48, 48, 48);
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=index.css.map */
