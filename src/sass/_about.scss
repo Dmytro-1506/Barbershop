@@ -1,4 +1,5 @@
 .about {
+    max-width: 480px;
     border-color: $background-color-1;
     padding-top: 84px;
     padding-bottom: 84px;
@@ -10,11 +11,7 @@
         flex-direction: column;
         
         .about-subtitle {
-            font-family: $font-Open-Sans;
-            color: $dark-text-svg-color;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 1.36;
+            @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, null);
             margin-bottom: 20px;
             &::before {
                 display: inline-block;
@@ -31,18 +28,27 @@
         .about-title {
             display: inline-block;
             width: 305px;
-            font-family: $font-Raleway;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 1.18;
-            color: $dark-text-svg-color;
+            @include font($font-Raleway, $dark-text-svg-color, 700, 28px, 1.18, 0.05);
             margin-bottom: 20px;
         }
         
-        .about-text-1 {}
+        .about-text-1 {
+            @include font($font-Open-Sans, $text-color-4, 400, 16px, 1.62, 0.02);
+            margin-bottom: 20px;
+        }
         
-        .about-description {}
+        .about-description {
+            @include font($font-Open-Sans, $text-color-4, 400, 14px, 1.86, 0.02);
+            margin-bottom: 40px;
+        }
         
-        .about-button {}
+        .about-button {
+            margin-left: 0;
+            width: 160px;
+            height: 40px;
+            border: 1px solid $accent-color-orange;
+            border-radius: 25px;
+            @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
+        }
     }
 }
