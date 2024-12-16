@@ -1,6 +1,8 @@
 .hero {
     background-image: url('../src/images/Hero-mobile-1x.jpg');
     height: 580px;
+    max-width: 480px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     padding-left: 30px;
@@ -8,5 +10,38 @@
     .hero-content-box {
         width: 320px;
         color: #fff;
+        .hero-subtitle {
+            color: $text-color-1;
+            font-family: $font-Open-Sans;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            margin-bottom: 20px;
+            &::before {
+                display: inline-block;
+                vertical-align: super;
+                contain: content;
+                content: ' ';
+                width: 60px;
+                height: 1px;
+                background-color:$text-color-1;
+                margin-right: 20px;
+            }
+        }
+        .hero-title {
+            font-family: $font-Raleway;
+            color: $text-color-2;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.17;
+            margin-bottom: 20px;
+        }
+        .hero-text {
+            font-family: $font-Open-Sans;
+            color: $text-color-1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.62;
+        }
     }
 }

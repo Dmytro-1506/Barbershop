@@ -1,12 +1,16 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .header {
   position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 40px;
+  width: 100%;
+}
+.header .header-container {
+  max-width: 420px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .header .open-mobile-svg {
   width: 40px;
@@ -17,6 +21,8 @@
 .hero {
   background-image: url("../src/images/Hero-mobile-1x.jpg");
   height: 580px;
+  max-width: 480px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   padding-left: 30px;
@@ -24,4 +30,37 @@
 .hero .hero-content-box {
   width: 320px;
   color: #fff;
+}
+.hero .hero-content-box .hero-subtitle {
+  color: rgba(157, 164, 189, 0.6);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  margin-bottom: 20px;
+}
+.hero .hero-content-box .hero-subtitle::before {
+  display: inline-block;
+  vertical-align: super;
+  contain: content;
+  content: " ";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+  margin-right: 20px;
+}
+.hero .hero-content-box .hero-title {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+.hero .hero-content-box .hero-text {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(157, 164, 189, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.62;
 }/*# sourceMappingURL=index.css.map */
