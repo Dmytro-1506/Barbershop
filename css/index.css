@@ -1,4 +1,37 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
 .header {
   position: absolute;
   padding-left: 30px;
@@ -32,11 +65,12 @@
   color: #fff;
 }
 .hero .hero-content-box .hero-subtitle {
-  color: rgba(157, 164, 189, 0.6);
   font-family: "Open Sans", sans-serif;
+  color: rgba(157, 164, 189, 0.6);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  letter-spacing: 0.1;
   margin-bottom: 20px;
 }
 .hero .hero-content-box .hero-subtitle::before {
@@ -52,15 +86,57 @@
 .hero .hero-content-box .hero-title {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 48px;
   font-weight: 700;
+  font-size: 48px;
   line-height: 1.17;
+  letter-spacing: 0.05;
   margin-bottom: 20px;
 }
 .hero .hero-content-box .hero-text {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.02;
+}
+
+.about {
+  border-color: #ffffff;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.about .about-content-box {
+  display: flex;
+  flex-direction: column;
+}
+.about .about-content-box .about-subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  margin-bottom: 20px;
+}
+.about .about-content-box .about-subtitle::before {
+  display: inline-block;
+  vertical-align: super;
+  contain: content;
+  content: " ";
+  width: 60px;
+  height: 1px;
+  background-color: rgb(48, 48, 48);
+  margin-right: 20px;
+}
+.about .about-content-box .about-title {
+  display: inline-block;
+  width: 305px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: rgb(48, 48, 48);
+  margin-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */

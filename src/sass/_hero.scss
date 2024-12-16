@@ -11,11 +11,7 @@
         width: 320px;
         color: #fff;
         .hero-subtitle {
-            color: $text-color-1;
-            font-family: $font-Open-Sans;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 1.36;
+            @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, 0.1);
             margin-bottom: 20px;
             &::before {
                 display: inline-block;
@@ -29,19 +25,11 @@
             }
         }
         .hero-title {
-            font-family: $font-Raleway;
-            color: $text-color-2;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 1.17;
+            @include font($font-Raleway, $text-color-2, 700, 48px, 1.17, 0.05);
             margin-bottom: 20px;
         }
         .hero-text {
-            font-family: $font-Open-Sans;
-            color: $text-color-1;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.62;
+            @include font($font-Open-Sans, $text-color-1, 400, 16px, 1.62, 0.02);
         }
     }
 }

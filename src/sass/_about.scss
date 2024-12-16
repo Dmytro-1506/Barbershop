@@ -1,0 +1,48 @@
+.about {
+    border-color: $background-color-1;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left: 31px;
+    padding-right: 31px;
+
+    .about-content-box {
+        display: flex;
+        flex-direction: column;
+        
+        .about-subtitle {
+            font-family: $font-Open-Sans;
+            color: $dark-text-svg-color;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            margin-bottom: 20px;
+            &::before {
+                display: inline-block;
+                vertical-align: super;
+                contain: content;
+                content: ' ';
+                width: 60px;
+                height: 1px;
+                background-color: $dark-text-svg-color;
+                margin-right: 20px;
+            }
+        }
+        
+        .about-title {
+            display: inline-block;
+            width: 305px;
+            font-family: $font-Raleway;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.18;
+            color: $dark-text-svg-color;
+            margin-bottom: 20px;
+        }
+        
+        .about-text-1 {}
+        
+        .about-description {}
+        
+        .about-button {}
+    }
+}
