@@ -1,27 +1,71 @@
 .prices {
-    background: url(../src/images/Prices-big.jpeg);
+    background-color: $background-color-4;
+    // background: url(../src/images/Prices-big.jpeg);
 
     .prices__content-box {
 
         
-        .prices__subtitle {}
+        .prices__subtitle {
+            @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, null);
+            margin-bottom: 20px;
+            &::before {
+                display: inline-block;
+                vertical-align: super;
+                contain: content;
+                content: ' ';
+                width: 60px;
+                height: 1px;
+                background-color: $text-color-1;
+                margin-right: 20px;
+            }
+        }
         
-        .prices__title {}
+        .prices__title {
+            @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 0.05);
+            margin-bottom: 44px;
+        }
         
         .prices__services {
-            background-color: $background-color-gradient;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: $background-gradient;
             padding-top: 30px;
             padding-bottom: 30px;
             padding-left: 40px;
             padding-right: 20px;
+            margin-bottom: 44px;
         }
         .prices__services-item {
             display: flex;
             width: 100%;
+            justify-content: space-between;
 
-                .prices__service-name {}
+                .prices__service-name {
+                    @include font($font-Open-Sans, $text-color-4, 400, 14px, 1.43, 0.02);
+                }
+
+                .prices__deco-line {
+                    // width: 100%;
+                    height: 1px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    background-color: rgba(157, 164, 189, 0.12);
+                }
                 
-                .prices__service-price {}
+                .prices__service-price {
+                    @include font($font-Open-Sans, $text-color-4, 400, 14px, 1.43, 0.02);
+                    &::before {
+                        display: inline-block;
+                        vertical-align: super;
+                        contain: content;
+                        content: ' ';
+                        height: 1px;
+                        background-color: rgba(157, 164, 189, 0.12);
+                        margin-left: 4px;
+                        margin-right: 4px;
+                    }
+                }
             }
         
         .prices__button {

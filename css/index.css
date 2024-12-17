@@ -193,18 +193,82 @@ button {
 }
 
 .prices {
-  background: url(../src/images/Prices-big.jpeg);
+  background-color: rgb(17, 19, 25);
+}
+.prices .prices__content-box .prices__subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  margin-bottom: 20px;
+}
+.prices .prices__content-box .prices__subtitle::before {
+  display: inline-block;
+  vertical-align: super;
+  contain: content;
+  content: " ";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+  margin-right: 20px;
+}
+.prices .prices__content-box .prices__title {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.05;
+  margin-bottom: 44px;
 }
 .prices .prices__content-box .prices__services {
-  background-color: linear-gradient(rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 40px;
   padding-right: 20px;
+  margin-bottom: 44px;
 }
 .prices .prices__content-box .prices__services-item {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+}
+.prices .prices__content-box .prices__services-item .prices__service-name {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02;
+}
+.prices .prices__content-box .prices__services-item .prices__deco-line {
+  height: 1px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.prices .prices__content-box .prices__services-item .prices__service-price {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02;
+}
+.prices .prices__content-box .prices__services-item .prices__service-price::before {
+  display: inline-block;
+  vertical-align: super;
+  contain: content;
+  content: " ";
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .prices .prices__content-box .prices__button {
   color: rgb(255, 255, 255);
