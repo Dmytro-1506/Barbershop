@@ -1,10 +1,18 @@
 .prices {
-    background-color: $background-color-4;
-    // background: url(../src/images/Prices-big.jpeg);
+    background-color: rgba(17, 19, 25, 1);
+    position: relative;
+    z-index: -99;
+    .prices__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        opacity: 0.2;
+        z-index: -9;
+    }
 
     .prices__content-box {
 
-        
         .prices__subtitle {
             @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, null);
             margin-bottom: 20px;
@@ -41,12 +49,13 @@
             width: 100%;
             justify-content: space-between;
 
-                .prices__service-name {
-                    @include font($font-Open-Sans, $text-color-4, 400, 14px, 1.43, 0.02);
+            .prices__service-name {
+                @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
+                display: block;
                 }
 
                 .prices__deco-line {
-                    // width: 100%;
+                    width: auto;
                     height: 1px;
                     margin-left: 4px;
                     margin-right: 4px;
@@ -54,14 +63,16 @@
                 }
                 
                 .prices__service-price {
-                    @include font($font-Open-Sans, $text-color-4, 400, 14px, 1.43, 0.02);
+                    @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
+                    display: block;
                     &::before {
                         display: inline-block;
-                        vertical-align: super;
+                        vertical-align: baseline;
                         contain: content;
-                        content: ' ';
+                        // content: ' ';
                         height: 1px;
                         background-color: rgba(157, 164, 189, 0.12);
+                        width: 20px;
                         margin-left: 4px;
                         margin-right: 4px;
                     }
