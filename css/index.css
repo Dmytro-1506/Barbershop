@@ -257,8 +257,55 @@ h3::before {
   line-height: 1.66;
   letter-spacing: 0.02;
 }
+.benefits .benefits__content-box .benefits__flex-content {
+  display: flex;
+  gap: 30px;
+}
 .benefits .benefits__content-box .benefits__deco-box-1 {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   padding-bottom: 35px;
+}
+.benefits .benefits__content-box .benefits__deco-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.benefits .benefits__content-box .benefits__deco-item {
+  width: 193px;
+  height: 133px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: rgb(247, 247, 247);
+}
+.benefits .benefits__content-box .benefits_amount-box {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  padding-right: 15px;
+}
+.benefits .benefits__content-box .benefits__deco-amount {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05;
+}
+.benefits .benefits__content-box .benefits__plus-svg {
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+.benefits .benefits__content-box .benefits__deco-text {
+  display: block;
+  width: 122px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }/*# sourceMappingURL=index.css.map */
