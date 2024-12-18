@@ -17,3 +17,20 @@ button {
     border-radius: 25px;
     @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
 }
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    &::before {
+        display: inline-block;
+        vertical-align: super;
+        contain: content;
+        content: ' ';
+        width: 60px;
+        height: 1px;
+        margin-right: 20px;
+    }
+}

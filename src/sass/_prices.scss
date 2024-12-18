@@ -15,16 +15,8 @@
 
         .prices__subtitle {
             @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, null);
-            margin-bottom: 20px;
             &::before {
-                display: inline-block;
-                vertical-align: super;
-                contain: content;
-                content: ' ';
-                width: 60px;
-                height: 1px;
                 background-color: $text-color-1;
-                margin-right: 20px;
             }
         }
         
@@ -55,27 +47,15 @@
                 }
 
                 .prices__deco-line {
-                    width: auto;
                     height: 1px;
                     margin-left: 4px;
                     margin-right: 4px;
-                    background-color: rgba(157, 164, 189, 0.12);
+                    color: rgba(157, 164, 189, 0.12);
                 }
                 
                 .prices__service-price {
                     @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
                     display: block;
-                    &::before {
-                        display: inline-block;
-                        vertical-align: baseline;
-                        contain: content;
-                        // content: ' ';
-                        height: 1px;
-                        background-color: rgba(157, 164, 189, 0.12);
-                        width: 20px;
-                        margin-left: 4px;
-                        margin-right: 4px;
-                    }
                 }
             }
         

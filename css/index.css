@@ -55,6 +55,23 @@ button {
   letter-spacing: 0.09;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+h3::before {
+  display: inline-block;
+  vertical-align: super;
+  contain: content;
+  content: " ";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
 .header {
   position: absolute;
   padding-left: 30px;
@@ -94,17 +111,9 @@ button {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1;
-  margin-bottom: 20px;
 }
 .hero .hero__content-box .hero__subtitle::before {
-  display: inline-block;
-  vertical-align: super;
-  contain: content;
-  content: " ";
-  width: 60px;
-  height: 1px;
   background-color: rgba(157, 164, 189, 0.6);
-  margin-right: 20px;
 }
 .hero .hero__content-box .hero__title {
   font-family: "Raleway", sans-serif;
@@ -137,17 +146,9 @@ button {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  margin-bottom: 20px;
 }
 .about .about__content-box .about__subtitle::before {
-  display: inline-block;
-  vertical-align: super;
-  contain: content;
-  content: " ";
-  width: 60px;
-  height: 1px;
   background-color: rgb(48, 48, 48);
-  margin-right: 20px;
 }
 .about .about__content-box .about__title {
   display: inline-block;
@@ -158,7 +159,6 @@ button {
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.05;
-  margin-bottom: 20px;
 }
 .about .about__content-box .about__text-1 {
   font-family: "Open Sans", sans-serif;
@@ -180,10 +180,6 @@ button {
 }
 .about .about__content-box .about__button {
   margin-left: 0;
-  width: 160px;
-  height: 40px;
-  border: 1px solid rgb(255, 108, 0);
-  border-radius: 25px;
   font-family: "Open Sans", sans-serif;
   color: rgb(48, 48, 48);
   font-weight: 600;
@@ -211,17 +207,9 @@ button {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  margin-bottom: 20px;
 }
 .prices .prices__content-box .prices__subtitle::before {
-  display: inline-block;
-  vertical-align: super;
-  contain: content;
-  content: " ";
-  width: 60px;
-  height: 1px;
   background-color: rgba(157, 164, 189, 0.6);
-  margin-right: 20px;
 }
 .prices .prices__content-box .prices__title {
   font-family: "Raleway", sans-serif;
@@ -258,11 +246,10 @@ button {
   display: block;
 }
 .prices .prices__content-box .prices__services-item .prices__deco-line {
-  width: auto;
   height: 1px;
   margin-left: 4px;
   margin-right: 4px;
-  background-color: rgba(157, 164, 189, 0.12);
+  color: rgba(157, 164, 189, 0.12);
 }
 .prices .prices__content-box .prices__services-item .prices__service-price {
   font-family: "Open Sans", sans-serif;
@@ -272,16 +259,6 @@ button {
   line-height: 1.43;
   letter-spacing: 0.02;
   display: block;
-}
-.prices .prices__content-box .prices__services-item .prices__service-price::before {
-  display: inline-block;
-  vertical-align: baseline;
-  contain: content;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
-  width: 20px;
-  margin-left: 4px;
-  margin-right: 4px;
 }
 .prices .prices__content-box .prices__button {
   color: rgb(255, 255, 255);

@@ -7,16 +7,8 @@
         
         .about__subtitle {
             @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, null);
-            margin-bottom: 20px;
             &::before {
-                display: inline-block;
-                vertical-align: super;
-                contain: content;
-                content: ' ';
-                width: 60px;
-                height: 1px;
                 background-color: $dark-text-svg-color;
-                margin-right: 20px;
             }
         }
         
@@ -24,7 +16,6 @@
             display: inline-block;
             width: 305px;
             @include font($font-Raleway, $dark-text-svg-color, 700, 28px, 1.18, 0.05);
-            margin-bottom: 20px;
         }
         
         .about__text-1 {
@@ -39,10 +30,6 @@
         
         .about__button {
             margin-left: 0;
-            width: 160px;
-            height: 40px;
-            border: 1px solid $accent-color-orange;
-            border-radius: 25px;
             @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
         }
     }

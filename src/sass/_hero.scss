@@ -10,18 +10,11 @@
     .hero__content-box {
         width: 320px;
         color: #fff;
+        
         .hero__subtitle {
             @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, 0.1);
-            margin-bottom: 20px;
             &::before {
-                display: inline-block;
-                vertical-align: super;
-                contain: content;
-                content: ' ';
-                width: 60px;
-                height: 1px;
                 background-color:$text-color-1;
-                margin-right: 20px;
             }
         }
         .hero__title {
