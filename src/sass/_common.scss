@@ -19,10 +19,12 @@ button {
 }
 
 h2 {
+    @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 0.05);
     margin-bottom: 20px;
 }
 
 h3 {
+    @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, 0.1);
     margin-bottom: 20px;
     &::before {
         display: inline-block;

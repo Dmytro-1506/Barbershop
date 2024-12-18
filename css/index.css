@@ -56,10 +56,22 @@ button {
 }
 
 h2 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.05;
   margin-bottom: 20px;
 }
 
 h3 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1;
   margin-bottom: 20px;
 }
 h3::before {
@@ -104,24 +116,11 @@ h3::before {
   width: 320px;
   color: #fff;
 }
-.hero .hero__content-box .hero__subtitle {
-  font-family: "Open Sans", sans-serif;
-  color: rgba(157, 164, 189, 0.6);
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1;
-}
 .hero .hero__content-box .hero__subtitle::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
 .hero .hero__content-box .hero__title {
-  font-family: "Raleway", sans-serif;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
   font-size: 48px;
-  line-height: 1.17;
-  letter-spacing: 0.05;
   margin-bottom: 20px;
 }
 .hero .hero__content-box .hero__text {
@@ -141,11 +140,7 @@ h3::before {
   flex-direction: column;
 }
 .about .about__content-box .about__subtitle {
-  font-family: "Open Sans", sans-serif;
   color: rgb(48, 48, 48);
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
 }
 .about .about__content-box .about__subtitle::before {
   background-color: rgb(48, 48, 48);
@@ -153,12 +148,8 @@ h3::before {
 .about .about__content-box .about__title {
   display: inline-block;
   width: 305px;
-  font-family: "Raleway", sans-serif;
-  color: rgb(48, 48, 48);
-  font-weight: 700;
   font-size: 28px;
-  line-height: 1.18;
-  letter-spacing: 0.05;
+  color: rgb(48, 48, 48);
 }
 .about .about__content-box .about__text-1 {
   font-family: "Open Sans", sans-serif;
@@ -180,12 +171,6 @@ h3::before {
 }
 .about .about__content-box .about__button {
   margin-left: 0;
-  font-family: "Open Sans", sans-serif;
-  color: rgb(48, 48, 48);
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09;
 }
 
 .prices {
@@ -201,23 +186,10 @@ h3::before {
   opacity: 0.2;
   z-index: -9;
 }
-.prices .prices__content-box .prices__subtitle {
-  font-family: "Open Sans", sans-serif;
-  color: rgba(157, 164, 189, 0.6);
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-}
 .prices .prices__content-box .prices__subtitle::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
 .prices .prices__content-box .prices__title {
-  font-family: "Raleway", sans-serif;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.05;
   margin-bottom: 44px;
 }
 .prices .prices__content-box .prices__services {
@@ -262,4 +234,31 @@ h3::before {
 }
 .prices .prices__content-box .prices__button {
   color: rgb(255, 255, 255);
+}
+
+.benefits .benefits__content-box .benefits__text-content {
+  margin-bottom: 44px;
+}
+.benefits .benefits__content-box .benefits__subtitle {
+  color: rgb(48, 48, 48);
+}
+.benefits .benefits__content-box .benefits__subtitle::before {
+  background-color: rgb(48, 48, 48);
+}
+.benefits .benefits__content-box .benefits__title {
+  color: rgb(48, 48, 48);
+  font-size: 42px;
+}
+.benefits .benefits__content-box .benefits__description {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02;
+}
+.benefits .benefits__content-box .benefits__deco-box-1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
 }/*# sourceMappingURL=index.css.map */

@@ -12,13 +12,12 @@
         color: #fff;
         
         .hero__subtitle {
-            @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, 0.1);
             &::before {
                 background-color:$text-color-1;
             }
         }
         .hero__title {
-            @include font($font-Raleway, $text-color-2, 700, 48px, 1.17, 0.05);
+            font-size: 48px;
             margin-bottom: 20px;
         }
         .hero__text {

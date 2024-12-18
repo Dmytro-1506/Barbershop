@@ -1,21 +1,42 @@
 .benefits {
 
     
-    .benefits__content-box {}
-    
-    .benefits__subtitle {}
-    
-    .benefits__title {}
-    
-    .benefits__description {}
-    
-    .benefits__deco-box-1 {}
-    
-    .benefits__deco-item {}
-    
-    .benefits__deco-amount {}
-    
-    .benefits__deco-text {}
-    
-    .benefits__deco-box-2 {}
+    .benefits__content-box {
+
+        .benefits__text-content {
+            margin-bottom: 44px;
+        }
+
+        .benefits__subtitle {
+            color: $dark-text-svg-color;
+            &::before {
+                background-color: $dark-text-svg-color;
+            }
+        }
+        
+        .benefits__title {
+            color: $dark-text-svg-color;
+            font-size: 42px;
+        }
+        
+        .benefits__description {
+            @include font($font-Open-Sans, $text-color-4, 400, 18px, 1.66, 0.02);
+            
+        }
+        
+        .benefits__deco-box-1 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 35px;
+        }
+
+        .benefits__deco-box-2 {}
+        
+        .benefits__deco-item {}
+        
+        .benefits__deco-amount {}
+        
+        .benefits__deco-text {}
+        
+    }
 }

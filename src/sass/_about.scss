@@ -6,7 +6,7 @@
         flex-direction: column;
         
         .about__subtitle {
-            @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, null);
+            color: $dark-text-svg-color;
             &::before {
                 background-color: $dark-text-svg-color;
             }
@@ -15,7 +15,8 @@
         .about__title {
             display: inline-block;
             width: 305px;
-            @include font($font-Raleway, $dark-text-svg-color, 700, 28px, 1.18, 0.05);
+            font-size: 28px;
+            color: $dark-text-svg-color;
         }
         
         .about__text-1 {
@@ -30,7 +31,6 @@
         
         .about__button {
             margin-left: 0;
-            @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
         }
     }
 }

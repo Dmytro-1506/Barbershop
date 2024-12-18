@@ -14,14 +14,12 @@
     .prices__content-box {
 
         .prices__subtitle {
-            @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, null);
             &::before {
                 background-color: $text-color-1;
             }
         }
         
         .prices__title {
-            @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 0.05);
             margin-bottom: 44px;
         }
         
