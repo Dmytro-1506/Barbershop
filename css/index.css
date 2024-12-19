@@ -327,6 +327,9 @@ h3::before {
 }
 .barbers .barbers__person-list {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 .barbers .barbers__person-photo {
   margin-bottom: 30px;
@@ -348,4 +351,26 @@ h3::before {
   line-height: 1.36;
   letter-spacing: 0.02;
   margin-bottom: 30px;
+}
+.barbers .barbers__social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.barbers .barbers__social-links .barbers__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-content: center;
+}
+.barbers .barbers__social-links .barbers__link .barbers__link-svg {
+  justify-self: center;
+  fill: rgb(48, 48, 48);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.barbers .barbers__social-links .barbers__link .barbers__link-svg:hover, .barbers .barbers__social-links .barbers__link .barbers__link-svg:focus {
+  fill: rgb(255, 108, 0);
 }/*# sourceMappingURL=index.css.map */

@@ -19,6 +19,9 @@ background-color: $background-color-2;
     
     .barbers__person-list {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
     }
     
     .barbers__person-item {}
@@ -35,5 +38,31 @@ background-color: $background-color-2;
     .barbers__person-position {
         @include font($font-Open-Sans, $accent-color-orange, 400, 14px, 1.36, 0.02);
         margin-bottom: 30px;
+    }
+
+    .barbers__social-links {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .barbers__link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: #fff;
+            align-content: center;
+            
+            .barbers__link-svg {
+                justify-self: center;
+                fill: $dark-text-svg-color;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                &:hover,
+                &:focus {
+                    fill: $accent-color-orange;
+                }
+            }
+        }
     }
 }
