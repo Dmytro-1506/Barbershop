@@ -1,0 +1,20 @@
+.gallery {
+    
+    .gallery__content-box {}
+    
+    .gallery__subtitle {
+        color: $dark-text-svg-color;
+        margin-bottom: 71px;
+        &::before {
+            background-color: $dark-text-svg-color;
+        }
+    }
+    
+    .gallery__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .gallery__item {}
+}

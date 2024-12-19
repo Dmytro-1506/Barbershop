@@ -373,4 +373,17 @@ h3::before {
 }
 .barbers .barbers__social-links .barbers__link .barbers__link-svg:hover, .barbers .barbers__social-links .barbers__link .barbers__link-svg:focus {
   fill: rgb(255, 108, 0);
+}
+
+.gallery .gallery__subtitle {
+  color: rgb(48, 48, 48);
+  margin-bottom: 71px;
+}
+.gallery .gallery__subtitle::before {
+  background-color: rgb(48, 48, 48);
+}
+.gallery .gallery__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }/*# sourceMappingURL=index.css.map */
