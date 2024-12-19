@@ -1,0 +1,68 @@
+.barbers {
+background-color: $background-color-2;
+    
+    .barbers__content-box {
+    }
+    
+    .barbers__subtitle {
+        color: $dark-text-svg-color;
+        &::before {
+            background-color: $dark-text-svg-color;
+        }
+    }
+    
+    .barbers__title {
+        color: $dark-text-svg-color;
+        font-size: 42px;
+        margin-bottom: 44px;
+    }
+    
+    .barbers__person-list {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+    
+    .barbers__person-item {}
+    
+    .barbers__person-photo {
+        margin-bottom: 30px;
+    }
+    
+    .barbers__person-name {
+        @include font($font-Open-Sans, $dark-text-svg-color, 400, 18px, 1.36, 0.02);
+        margin-bottom: 8px;
+    }
+    
+    .barbers__person-position {
+        @include font($font-Open-Sans, $accent-color-orange, 400, 14px, 1.36, 0.02);
+        margin-bottom: 30px;
+    }
+
+    .barbers__social-links {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .barbers__link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: #fff;
+            align-content: center;
+            
+            .barbers__link-svg {
+                justify-self: center;
+                fill: $dark-text-svg-color;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                &:hover,
+                &:focus {
+                    fill: $accent-color-orange;
+                }
+            }
+        }
+    }
+}

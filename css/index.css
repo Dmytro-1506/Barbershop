@@ -309,4 +309,68 @@ h3::before {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+}
+
+.barbers {
+  background-color: rgb(247, 247, 247);
+}
+.barbers .barbers__subtitle {
+  color: rgb(48, 48, 48);
+}
+.barbers .barbers__subtitle::before {
+  background-color: rgb(48, 48, 48);
+}
+.barbers .barbers__title {
+  color: rgb(48, 48, 48);
+  font-size: 42px;
+  margin-bottom: 44px;
+}
+.barbers .barbers__person-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.barbers .barbers__person-photo {
+  margin-bottom: 30px;
+}
+.barbers .barbers__person-name {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.36;
+  letter-spacing: 0.02;
+  margin-bottom: 8px;
+}
+.barbers .barbers__person-position {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 108, 0);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02;
+  margin-bottom: 30px;
+}
+.barbers .barbers__social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.barbers .barbers__social-links .barbers__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-content: center;
+}
+.barbers .barbers__social-links .barbers__link .barbers__link-svg {
+  justify-self: center;
+  fill: rgb(48, 48, 48);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.barbers .barbers__social-links .barbers__link .barbers__link-svg:hover, .barbers .barbers__social-links .barbers__link .barbers__link-svg:focus {
+  fill: rgb(255, 108, 0);
 }/*# sourceMappingURL=index.css.map */
