@@ -15,9 +15,8 @@
         .about__title {
             display: inline-block;
             width: 305px;
-            font-size: 28px;
-            line-height: 1.14;
-            color: $dark-text-svg-color;
+            @include font($font-Raleway, $dark-text-svg-color, 700, 28px, 1.17, 1px);
+            margin-bottom: 20px;
         }
         
         .about__text-1 {
