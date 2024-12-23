@@ -9,8 +9,7 @@ background-color: $background-color-2;
     }
     
     .barbers__title {
-        color: $dark-text-svg-color;
-        font-size: 42px;
+        @include font($font-Raleway, $dark-text-svg-color, 700, 42px, 1.17, 1px);
         margin-bottom: 44px;
     }
 

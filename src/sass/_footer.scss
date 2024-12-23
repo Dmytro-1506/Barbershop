@@ -1,0 +1,33 @@
+.footer {
+    width: 480px;
+    height: 138px;
+    margin: 0 auto;
+    padding: 44px 31px;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__copyright {
+        @include font($font-Open-Sans, $text-color-3, 600, 11px, 1.36, 0.2);
+        align-self: self-end;
+    }
+
+    .footer__social-links-box {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 35px;
+    }
+
+    .footer__deco-line {
+        display: inline-block;
+        align-self: center;
+        contain: content;
+        content: ' ';
+        background-color: $dark-text-svg-color;
+        width: 60px;
+        height: 1px;
+    }
+    
+    .footer__link {
+        @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, 2px);
+    }
+}

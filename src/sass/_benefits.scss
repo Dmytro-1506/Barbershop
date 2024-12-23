@@ -1,6 +1,5 @@
 .benefits {
 
-    
     .benefits__content-box {
 
         .benefits__text-content {
@@ -15,13 +14,12 @@
         }
         
         .benefits__title {
-            color: $dark-text-svg-color;
-            font-size: 42px;
+            @include font($font-Raleway, $dark-text-svg-color, 700, 42px, 1.17, 1px);
+            margin-bottom: 20px;
         }
         
         .benefits__description {
             @include font($font-Open-Sans, $text-color-4, 400, 18px, 1.66, 0.02);
-            
         }
 
         .benefits__flex-content {
@@ -61,7 +59,7 @@
         .benefits__deco-amount {
             @include font($font-Open-Sans, $dark-text-svg-color, 700, 42px, 1.36, 0.05);
         }
-        
+
         .benefits__plus-svg {
             position: absolute;
             right: 0;

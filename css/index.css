@@ -55,16 +55,6 @@ button {
   letter-spacing: 0.09;
 }
 
-h2 {
-  font-family: "Raleway", sans-serif;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.05;
-  margin-bottom: 20px;
-}
-
 h3 {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
@@ -120,7 +110,12 @@ h3::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
 .hero .hero__content-box .hero__title {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
   font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 .hero .hero__content-box .hero__text {
@@ -148,9 +143,13 @@ h3::before {
 .about .about__content-box .about__title {
   display: inline-block;
   width: 305px;
-  font-size: 28px;
-  line-height: 1.14;
+  font-family: "Raleway", sans-serif;
   color: rgb(48, 48, 48);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 .about .about__content-box .about__text-1 {
   font-family: "Open Sans", sans-serif;
@@ -191,6 +190,12 @@ h3::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
 .prices .prices__content-box .prices__title {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 1px;
   margin-bottom: 44px;
 }
 .prices .prices__content-box .prices__services {
@@ -247,8 +252,13 @@ h3::before {
   background-color: rgb(48, 48, 48);
 }
 .benefits .benefits__content-box .benefits__title {
+  font-family: "Raleway", sans-serif;
   color: rgb(48, 48, 48);
+  font-weight: 700;
   font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 .benefits .benefits__content-box .benefits__description {
   font-family: "Open Sans", sans-serif;
@@ -321,8 +331,12 @@ h3::before {
   background-color: rgb(48, 48, 48);
 }
 .barbers .barbers__title {
+  font-family: "Raleway", sans-serif;
   color: rgb(48, 48, 48);
+  font-weight: 700;
   font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 1px;
   margin-bottom: 44px;
 }
 .barbers .barbers__person-list {
@@ -395,7 +409,12 @@ h3::before {
   text-align: center;
 }
 .booking .booking__title {
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
   font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 1px;
   margin-bottom: 44px;
 }
 .booking .booking__input {
@@ -452,8 +471,13 @@ h3::before {
   z-index: -9;
 }
 .contacts .contacts__title {
-  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
   font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 1px;
+  text-align: center;
   margin-bottom: 40px;
 }
 .contacts .contacts__list {
@@ -491,4 +515,44 @@ h3::before {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02;
+}
+
+.footer {
+  width: 480px;
+  height: 138px;
+  margin: 0 auto;
+  padding: 44px 31px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__copyright {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(157, 164, 189);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2;
+  align-self: self-end;
+}
+.footer .footer__social-links-box {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 35px;
+}
+.footer .footer__deco-line {
+  display: inline-block;
+  align-self: center;
+  contain: content;
+  content: " ";
+  background-color: rgb(48, 48, 48);
+  width: 60px;
+  height: 1px;
+}
+.footer .footer__link {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=index.css.map */

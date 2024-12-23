@@ -17,7 +17,7 @@
             }
         }
         .hero__title {
-            font-size: 48px;
+            @include font($font-Raleway, $text-color-2, 700, 48px, 1.17, 1px);
             margin-bottom: 20px;
         }
         .hero__text {
