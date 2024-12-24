@@ -18,6 +18,15 @@ button {
     @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
 }
 
+.mobile-button {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    justify-self: end
+}
+
 h3 {
     @include font($font-Open-Sans, $text-color-1, 600, 11px, 1.36, 0.1);
     margin-bottom: 20px;

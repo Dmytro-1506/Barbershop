@@ -55,6 +55,15 @@ button {
   letter-spacing: 0.09;
 }
 
+.mobile-button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  justify-self: end;
+}
+
 h3 {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
@@ -565,6 +574,7 @@ h3::before {
   width: 100%;
 }
 .mobile-menu .mobile-menu__content-box {
+  display: grid;
   background-color: #fff;
   width: 337px;
   height: 100%;
@@ -574,8 +584,7 @@ h3::before {
   padding-right: 31px;
 }
 .mobile-menu .mobile-menu__close-svg {
-  display: block;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .mobile-menu .mobile-menu__nav-links-box {
   display: flex;
