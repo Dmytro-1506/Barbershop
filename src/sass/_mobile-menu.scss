@@ -6,6 +6,7 @@
     width: 100%;
     
     .mobile-menu__content-box {
+        display: grid;
         background-color: #fff;
         width: 337px;
         height: 100%;
@@ -15,9 +16,10 @@
         padding-right: 31px;
     }
 
+
+
     .mobile-menu__close-svg {
-        display: block;
-        margin-left: auto;
+        margin: 0 auto;
     }
 
     .mobile-menu__nav-links-box {
