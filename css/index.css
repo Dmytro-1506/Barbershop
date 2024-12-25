@@ -180,6 +180,13 @@ h3::before {
 }
 .about .about__content-box .about__button {
   margin-left: 0;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about .about__content-box .about__button:hover, .about .about__content-box .about__button:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 108, 0);
 }
 
 .prices {
@@ -249,6 +256,13 @@ h3::before {
 .prices .prices__button {
   z-index: 99;
   color: rgb(255, 255, 255);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.prices .prices__button:hover, .prices .prices__button:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 108, 0);
 }
 
 .benefits .benefits__content-box .benefits__text-content {
@@ -464,6 +478,13 @@ h3::before {
 }
 .booking .booking__form-button {
   color: rgb(255, 255, 255);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.booking .booking__form-button:hover, .booking .booking__form-button:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 108, 0);
 }
 
 .contacts {
@@ -627,6 +648,13 @@ h3::before {
   margin-top: 19px;
   margin-left: 0;
   margin-bottom: 69px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 108, 0);
 }
 
 .mobile-menu__social-links-box {
