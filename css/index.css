@@ -84,6 +84,13 @@ h3::before {
   margin-right: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  cursor: pointer;
+}
+
 .header {
   position: absolute;
   padding-left: 30px;
@@ -456,13 +463,13 @@ h3::before {
   font-size: 42px;
   margin-bottom: 40px;
 }
-.contacts .contacts__list {
+.contacts .contacts__links-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 44px;
 }
-.contacts .contacts__list-item .mail-link {
+.contacts .contacts__links-box .mail-link {
   text-decoration: underline;
 }
 .contacts .contacts__address-link {
@@ -473,10 +480,23 @@ h3::before {
   line-height: 1.67;
   letter-spacing: 0.02;
   font-style: normal;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.contacts .contacts__address-link:hover, .contacts .contacts__address-link:focus {
+  color: rgb(255, 108, 0);
 }
 .contacts .contacts__address-svg {
   margin-right: 16px;
   vertical-align: middle;
+  fill: rgb(157, 164, 189);
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.contacts .contacts__address-svg:hover, .contacts .contacts__address-svg:focus {
+  fill: rgb(255, 108, 0);
 }
 .contacts .contacts__subtitle {
   color: rgb(255, 255, 255);

@@ -18,25 +18,40 @@
         margin-bottom: 40px;
     }
     
-    .contacts__list {
+    .contacts__links-box {
         display: flex;
         flex-direction: column;
         gap: 20px;
         margin-bottom: 44px;
     }
-    
-    .contacts__list-item .mail-link {
+
+    .contacts__links-box .mail-link {
         text-decoration: underline;
     }
     
     .contacts__address-link {
         @include font($font-Open-Sans, $text-color-3, 700, 18px, 1.67, 0.02);
         font-style: normal;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        &:hover,
+        &:focus {
+            color: $accent-color-orange;
+        }
     }
     
     .contacts__address-svg {
         margin-right: 16px;
         vertical-align: middle;
+        fill: $text-color-3;
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        &:hover,
+        &:focus {
+            fill: $accent-color-orange;
+        }
     }
     
     .contacts__subtitle {
