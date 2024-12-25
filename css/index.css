@@ -183,22 +183,21 @@ h3::before {
 }
 
 .prices {
-  background-color: rgb(17, 19, 25);
-  position: relative;
-  z-index: -99;
+  padding: 0;
+  background: url("../src/images/Prices-mobile-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .prices .prices__background {
-  position: absolute;
-  left: 0;
-  top: 0;
+  background-color: rgba(17, 19, 25, 0.6);
   height: 100%;
-  opacity: 0.2;
-  z-index: -9;
+  width: 100%;
+  padding: 84px 31px;
 }
-.prices .prices__content-box .prices__subtitle::before {
+.prices .prices__subtitle::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
-.prices .prices__content-box .prices__title {
+.prices .prices__title {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 700;
@@ -207,7 +206,7 @@ h3::before {
   letter-spacing: 1px;
   margin-bottom: 44px;
 }
-.prices .prices__content-box .prices__services {
+.prices .prices__services {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -218,12 +217,12 @@ h3::before {
   padding-right: 20px;
   margin-bottom: 44px;
 }
-.prices .prices__content-box .prices__services-item {
+.prices .prices__services-item {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.prices .prices__content-box .prices__services-item .prices__service-name {
+.prices .prices__service-name {
   font-family: "Open Sans", sans-serif;
   color: rgb(157, 164, 189);
   font-weight: 400;
@@ -232,13 +231,13 @@ h3::before {
   letter-spacing: 0.02;
   display: block;
 }
-.prices .prices__content-box .prices__services-item .prices__deco-line {
+.prices .prices__deco-line {
   height: 1px;
   margin-left: 4px;
   margin-right: 4px;
   color: rgba(157, 164, 189, 0.12);
 }
-.prices .prices__content-box .prices__services-item .prices__service-price {
+.prices .prices__service-price {
   font-family: "Open Sans", sans-serif;
   color: rgb(157, 164, 189);
   font-weight: 400;
@@ -247,7 +246,8 @@ h3::before {
   letter-spacing: 0.02;
   display: block;
 }
-.prices .prices__content-box .prices__button {
+.prices .prices__button {
+  z-index: 99;
   color: rgb(255, 255, 255);
 }
 
