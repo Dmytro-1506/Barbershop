@@ -4,12 +4,14 @@
     padding-right: 30px;
     padding-top: 40px;
     width: 100%;
-    .header__container{
+
+    .header__container {
         max-width: 420px;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
     }
+
     .header__open-mobile-svg {
         width: 40px;
         height: 40px;
