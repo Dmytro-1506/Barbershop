@@ -1,65 +1,64 @@
 .prices {
-    background-color: rgba(17, 19, 25, 1);
-    position: relative;
-    z-index: -99;
+    padding: 0;
+    background: url('../src/images/Prices-mobile-1x.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
     .prices__background {
-        position: absolute;
-        left: 0;
-        top: 0;
+        background-color: rgba(17, 19, 25, 0.6);
         height: 100%;
-        opacity: 0.2;
-        z-index: -9;
+        width: 100%;
+        padding: 84px 31px;
     }
 
-    .prices__content-box {
-
-        .prices__subtitle {
-            &::before {
-                background-color: $text-color-1;
-            }
+    .prices__subtitle {
+        &::before {
+            background-color: $text-color-1;
         }
+    }
+    
+    .prices__title {
+        @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 1px);
+        margin-bottom: 44px;
+    }
         
-        .prices__title {
-            @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 1px);
-            margin-bottom: 44px;
-        }
-        
-        .prices__services {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background: $background-gradient;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 40px;
-            padding-right: 20px;
-            margin-bottom: 44px;
-        }
-        .prices__services-item {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
+    .prices__services {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: $background-gradient;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+        padding-right: 20px;
+        margin-bottom: 44px;
+    }
 
-            .prices__service-name {
-                @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
-                display: block;
-                }
+    .prices__services-item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 
-                .prices__deco-line {
-                    height: 1px;
-                    margin-left: 4px;
-                    margin-right: 4px;
-                    color: rgba(157, 164, 189, 0.12);
-                }
+    .prices__service-name {
+        @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
+        display: block;
+    }
+
+    .prices__deco-line {
+        height: 1px;
+        margin-left: 4px;
+        margin-right: 4px;
+        color: rgba(157, 164, 189, 0.12);
+    }
                 
-                .prices__service-price {
-                    @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
-                    display: block;
-                }
-            }
-        
-        .prices__button {
-            color: $text-color-2;
-        }
+    .prices__service-price {
+        @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
+        display: block;
+    }
+    
+    .prices__button {
+        z-index: 99;
+        color: $text-color-2;
     }
 }
