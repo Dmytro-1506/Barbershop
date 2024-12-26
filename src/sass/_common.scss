@@ -1,7 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body {
+    width: 100vw;
+}
+
 section {
     max-width: 480px;
+    overflow: hidden;
     margin: 0 auto;
     padding-top: 84px;
     padding-bottom: 84px;
