@@ -1,5 +1,5 @@
 .footer {
-    width: 480px;
+    max-width: 480px;
     height: 138px;
     margin: 0 auto;
     padding: 44px 31px;
@@ -7,13 +7,17 @@
     justify-content: space-between;
 
     .footer__copyright {
-        @include font($font-Open-Sans, $text-color-3, 600, 11px, 1.36, 0.2);
+        @include font($font-Open-Sans, $text-color-3, 600, 11px, 1.36, 1.5px);
         align-self: self-end;
+        display: block;
+        min-width: 130px;
     }
 
     .footer__social-links-box {
         display: flex;
-        gap: 40px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: end;
         margin-bottom: 35px;
     }
 
@@ -25,9 +29,11 @@
         background-color: $dark-text-svg-color;
         width: 60px;
         height: 1px;
+        margin-left: 0;
     }
     
     .footer__link {
         @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, 2px);
+        margin-left: 40px;
     }
 }
