@@ -42,7 +42,9 @@
         }
         
         .benefits__deco-item {
-            width: 193px;
+            min-width: 120px;
+            max-width: 195px;
+            width: calc((100vw - 90px) / 2);
             height: 133px;
             text-align: center;
             padding-top: 20px;

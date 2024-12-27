@@ -8,7 +8,13 @@
         background-color: rgba(17, 19, 25, 0.6);
         height: 100%;
         width: 100%;
-        padding: 84px 31px;
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+
+    .prices__text-content-box {
+        padding: 0 31px;
+        margin-bottom: 44px;
     }
 
     .prices__subtitle {
@@ -19,7 +25,6 @@
     
     .prices__title {
         @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 1px);
-        margin-bottom: 44px;
     }
         
     .prices__services {
@@ -27,13 +32,14 @@
         flex-direction: column;
         gap: 20px;
         min-width: 340px;
+        max-width: 420px;
         overflow: scroll;
         background: $background-gradient;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 40px;
         padding-right: 20px;
-        margin-bottom: 44px;
+        margin: 0 auto;
     }
 
     .prices__services-item {
@@ -68,6 +74,7 @@
         transition-property: background-color, color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 44px;
         
         &:hover,
         &:focus {
