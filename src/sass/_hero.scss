@@ -1,27 +1,80 @@
 .hero {
-    background-image: url('../src/images/Hero-mobile-1x.jpg');
-    height: 580px;
-    max-width: 480px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
+    padding: 0;
+    @include tablet{
+        display: flex;
+        max-width: 690px;
+        height: 100vh;
+        min-height: 470px;
+    }
 
+    .hero__sidebar {
+        display: none;
+        @include tablet {
+            display: block;
+            width: 88px;
+            max-height: 680px;
+            align-content: end;
+            padding-bottom: 40px;
+        }
+    }
+    
+    .hero__sideba-content-box {
+        display: flex;
+        gap: 40px;
+        text-align: center;
+        transform: rotate(-90deg);
+    }
+
+    .hero__sidebar-deco-line {
+        display: block;
+        align-self: center;
+        contain: content;
+        content: ' ';
+        background-color: $dark-text-svg-color;
+        min-width: 60px;
+        height: 1px;
+        margin-left: 40px;
+    }
+
+    .hero__sidebar-link {
+        @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, 2px);
+        align-self: center;
+    }
+    
     .hero__content-box {
-        width: 320px;
-        color: #fff;
+        background-image: url('../src/images/Hero-mobile-1x.jpg');
+        width: 100%;
+        height: 580px;
+        padding-left: 30px;
+        padding-top: 208px;
+        @include tablet{
+            background-image: url('../src/images/Hero-tablet-1x.jpg');
+            width: 573px;
+            height: 100%;
+            max-height: 680px;
+            padding-left: 98px;
+            padding-top: 272px;
+        }
+    }
+
+    .hero__text-content-box {
+
+    }
         
-        .hero__subtitle {
-            &::before {
-                background-color:$text-color-1;
-            }
+    .hero__subtitle {
+        &::before {
+            background-color:$text-color-1;
         }
-        .hero__title {
-            @include font($font-Raleway, $text-color-2, 700, 48px, 1.17, 1px);
-            margin-bottom: 20px;
-        }
-        .hero__text {
-            @include font($font-Open-Sans, $text-color-1, 400, 16px, 1.62, 0.02);
-        }
+    }
+
+    .hero__title {
+        @include font($font-Raleway, $text-color-2, 700, 48px, 1.17, 1px);
+        margin-bottom: 20px;
+    }
+
+    .hero__text {
+        display: block;
+        width: 320px;
+        @include font($font-Open-Sans, $text-color-1, 400, 16px, 1.62, 0.02);
     }
 }

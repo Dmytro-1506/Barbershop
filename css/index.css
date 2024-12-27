@@ -38,7 +38,6 @@ body {
 
 section {
   max-width: 480px;
-  overflow: hidden;
   margin: 0 auto;
   padding-top: 84px;
   padding-bottom: 84px;
@@ -113,22 +112,74 @@ h3::before {
 }
 
 .hero {
-  background-image: url("../src/images/Hero-mobile-1x.jpg");
-  height: 580px;
-  max-width: 480px;
-  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    max-width: 690px;
+    height: 100vh;
+    min-height: 470px;
+  }
+}
+.hero .hero__sidebar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero .hero__sidebar {
+    display: block;
+    width: 88px;
+    max-height: 680px;
+    align-content: end;
+    padding-bottom: 40px;
+  }
+}
+.hero .hero__sideba-content-box {
   display: flex;
-  align-items: center;
-  padding-left: 30px;
+  gap: 40px;
+  text-align: center;
+  transform: rotate(-90deg);
+}
+.hero .hero__sidebar-deco-line {
+  display: block;
+  align-self: center;
+  contain: content;
+  content: " ";
+  background-color: rgb(48, 48, 48);
+  min-width: 60px;
+  height: 1px;
+  margin-left: 40px;
+}
+.hero .hero__sidebar-link {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 2px;
+  align-self: center;
 }
 .hero .hero__content-box {
-  width: 320px;
-  color: #fff;
+  background-image: url("../src/images/Hero-mobile-1x.jpg");
+  width: 100%;
+  height: 580px;
+  padding-left: 30px;
+  padding-top: 208px;
 }
-.hero .hero__content-box .hero__subtitle::before {
+@media screen and (min-width: 768px) {
+  .hero .hero__content-box {
+    background-image: url("../src/images/Hero-tablet-1x.jpg");
+    width: 573px;
+    height: 100%;
+    max-height: 680px;
+    padding-left: 98px;
+    padding-top: 272px;
+  }
+}
+.hero .hero__subtitle::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
-.hero .hero__content-box .hero__title {
+.hero .hero__title {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 700;
@@ -137,7 +188,9 @@ h3::before {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-.hero .hero__content-box .hero__text {
+.hero .hero__text {
+  display: block;
+  width: 320px;
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
   font-weight: 400;
@@ -627,6 +680,11 @@ h3::before {
   overflow-y: scroll;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__container {
+    display: none;
+  }
 }
 
 .mobile-menu__container.is-open {
