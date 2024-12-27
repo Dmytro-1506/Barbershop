@@ -16,5 +16,8 @@
         width: 40px;
         height: 40px;
         align-self: center;
+        @include tablet{
+            display: none;
+        }
     }
 }
