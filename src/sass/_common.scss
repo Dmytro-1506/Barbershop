@@ -6,7 +6,6 @@ body {
 
 section {
     max-width: 480px;
-    // overflow: hidden;
     margin: 0 auto;
     padding-top: 84px;
     padding-bottom: 84px;
@@ -21,6 +20,11 @@ button {
     border: 1px solid $accent-color-orange;
     border-radius: 25px;
     @include font($font-Open-Sans, $dark-text-svg-color, 600, 12px, 1.33, 0.09);
+    &:hover,
+    &:focus {
+        color: $text-color-2;
+        background-color: $accent-color-orange;
+    }
 }
 
 .mobile-button {
