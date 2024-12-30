@@ -1,12 +1,28 @@
 <header class="header">
   <div class="header__container">
     <a href="./index.html">
-      <img class="logo" src="./images/logo.png" alt="logo" />
+      <svg class="header__logo" width="68px" height="56px">
+        <use href="./images/symbol-defs.svg#icon-logo"></use>
+      </svg>
     </a>
     <button type="button" class="mobile-button js-open-menu">
       <svg class="header__open-mobile-svg">
         <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
       </svg>
     </button>
+    <div class="header__nav-box">
+      <div class="header__nav-list">
+        <a class="header__nav-link" href="">About</a>
+        <a class="header__nav-link" href="">Services and prices</a>
+        <a class="header__nav-link" href="">Barbers</a>
+        <a class="header__nav-link" href="">Contacts</a>
+      </div>
+      <div class="header__contacts-box">
+        <button class="header__button">ONLINE-BOOKING</button>
+        <a class="header__phone-link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+      </div>
+    </div>
   </div>
 </header>

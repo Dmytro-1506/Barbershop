@@ -5,6 +5,7 @@
         max-width: 690px;
         height: 100vh;
         min-height: 470px;
+        justify-content: space-between;
     }
 
     .hero__sidebar {
@@ -39,6 +40,10 @@
     .hero__sidebar-link {
         @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, 2px);
         align-self: center;
+        &:hover,
+        &:focus {
+            color: $accent-color-orange;
+        }
     }
     
     .hero__content-box {
@@ -57,10 +62,6 @@
         }
     }
 
-    .hero__text-content-box {
-
-    }
-        
     .hero__subtitle {
         &::before {
             background-color:$text-color-1;

@@ -4,20 +4,78 @@
     padding-right: 30px;
     padding-top: 40px;
     width: 100%;
-
+    @include tablet {
+        min-width: 768px;
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-top: 0;
+    }
+    
     .header__container {
         max-width: 420px;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        @include tablet {
+            min-width: 690px;
+        }
+    }
+
+    .header__logo {
+        fill: $dark-text-svg-color;
+        margin-top: 32px;
     }
 
     .header__open-mobile-svg {
         width: 40px;
         height: 40px;
         align-self: center;
+    }
+    
+    .js-open-menu {
         @include tablet{
             display: none;
+        }
+    }
+
+    .header__nav-box {
+        display: none;
+        @include tablet {
+            display: flex;
+            width: 554px;
+        }
+    }
+
+    .header__nav-list {
+        display: flex;
+        gap: 20px;
+        margin-top: 52px;
+        margin-right: 45px;
+    }
+
+    .header__nav-link {
+        @include font($font-Open-Sans, $text-color-2, 600, 12px, 1.36, 1px);
+        &:hover,
+        &:focus {
+            color: $accent-color-orange;
+        }
+    }
+
+    .header__contacts-box {
+        text-align: center
+    }
+
+    .header__button {
+        @include font($font-Open-Sans, $text-color-2, 600, 12px, 1.36, 1px);
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .header__phone-link {
+        @include font($font-Open-Sans, $text-color-2, 600, 12px, 1.36, 1px);
+        &:hover,
+        &:focus {
+            color: $accent-color-orange;
         }
     }
 }
