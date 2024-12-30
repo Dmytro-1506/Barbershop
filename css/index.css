@@ -110,6 +110,7 @@ h3::before {
   max-width: 420px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -118,8 +119,15 @@ h3::before {
   }
 }
 .header .header__logo {
-  fill: rgb(48, 48, 48);
-  margin-top: 32px;
+  fill: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .header .header__logo {
+    margin-top: 32px;
+    margin-left: 11px;
+    fill: rgb(48, 48, 48);
+    stroke: rgb(48, 48, 48);
+  }
 }
 .header .header__open-mobile-svg {
   width: 40px;

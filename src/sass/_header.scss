@@ -15,6 +15,7 @@
         max-width: 420px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
         @include tablet {
             min-width: 690px;
@@ -22,8 +23,13 @@
     }
 
     .header__logo {
-        fill: $dark-text-svg-color;
-        margin-top: 32px;
+        fill: $text-color-2;
+        @include tablet {
+            margin-top: 32px;
+            margin-left: 11px;
+            fill: $dark-text-svg-color;
+            stroke: $dark-text-svg-color;
+        }
     }
 
     .header__open-mobile-svg {

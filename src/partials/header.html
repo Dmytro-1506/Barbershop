@@ -1,9 +1,10 @@
 <header class="header">
   <div class="header__container">
     <a href="./index.html">
-      <svg class="header__logo" width="68px" height="56px">
-        <use href="./images/symbol-defs.svg#icon-logo"></use>
-      </svg>
+      <picture class="header__logo" width="68px" height="56px">
+        <source srcset="./images/Logo-tablet.png" media="(min-width:768px)" />
+        <img src="./images/Logo-mobile.png" alt="logo" />
+      </picture>
     </a>
     <button type="button" class="mobile-button js-open-menu">
       <svg class="header__open-mobile-svg">
