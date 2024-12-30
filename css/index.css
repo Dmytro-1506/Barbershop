@@ -119,7 +119,7 @@ h3::before {
 }
 .header .header__logo {
   fill: rgb(48, 48, 48);
-  color: rgb(48, 48, 48);
+  margin-top: 32px;
 }
 .header .header__open-mobile-svg {
   width: 40px;
