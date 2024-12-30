@@ -15,15 +15,17 @@
         max-width: 420px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
         @include tablet {
             min-width: 690px;
         }
     }
 
-    .header__logo {
-        fill: $dark-text-svg-color;
-        margin-top: 32px;
+    .header__logo-link {
+        @include tablet {
+            margin-left: 11px;
+        }
     }
 
     .header__open-mobile-svg {
