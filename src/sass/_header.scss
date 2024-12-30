@@ -22,13 +22,9 @@
         }
     }
 
-    .header__logo {
-        fill: $text-color-2;
+    .header__logo-link {
         @include tablet {
-            margin-top: 32px;
             margin-left: 11px;
-            fill: $dark-text-svg-color;
-            stroke: $dark-text-svg-color;
         }
     }
 
