@@ -1,9 +1,17 @@
 .benefits {
+    @include tablet {
+        min-width: 768px;
+        padding: 100px 39px;
+    }
 
     .benefits__content-box {
 
         .benefits__text-content {
+            display: block;
             margin-bottom: 44px;
+            @include tablet {
+                max-width: 500px;
+            }
         }
 
         .benefits__subtitle {
@@ -25,6 +33,9 @@
         .benefits__flex-content {
             display: flex;
             gap: 30px;
+            @include tablet {
+                justify-content: end;
+            }
         }
         
         .benefits__deco-box-1 {
@@ -49,6 +60,9 @@
             text-align: center;
             padding-top: 20px;
             background-color: $background-color-2;
+            @include tablet {
+                max-width: 210px;
+            }
         }
 
         .benefits_amount-box {

@@ -190,8 +190,9 @@ h3::before {
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;
-    max-width: 690px;
     height: 100vh;
+    max-width: 690px;
+    max-height: 680px;
     min-height: 470px;
     justify-content: space-between;
   }
@@ -490,8 +491,20 @@ h3::before {
   background-color: rgb(255, 108, 0);
 }
 
+@media screen and (min-width: 768px) {
+  .benefits {
+    min-width: 768px;
+    padding: 100px 39px;
+  }
+}
 .benefits .benefits__content-box .benefits__text-content {
+  display: block;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .benefits .benefits__content-box .benefits__text-content {
+    max-width: 500px;
+  }
 }
 .benefits .benefits__content-box .benefits__subtitle {
   color: rgb(48, 48, 48);
@@ -520,6 +533,11 @@ h3::before {
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .benefits .benefits__content-box .benefits__flex-content {
+    justify-content: end;
+  }
+}
 .benefits .benefits__content-box .benefits__deco-box-1 {
   display: flex;
   flex-direction: column;
@@ -540,6 +558,11 @@ h3::before {
   text-align: center;
   padding-top: 20px;
   background-color: rgb(247, 247, 247);
+}
+@media screen and (min-width: 768px) {
+  .benefits .benefits__content-box .benefits__deco-item {
+    max-width: 210px;
+  }
 }
 .benefits .benefits__content-box .benefits_amount-box {
   position: relative;
