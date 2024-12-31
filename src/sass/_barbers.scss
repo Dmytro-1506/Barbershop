@@ -27,6 +27,10 @@ background-color: $background-color-2;
     .barbers__person-photo {
         display: block;
         margin-bottom: 30px;
+        @include tablet {
+            width: 450px;
+            height: 346px;
+        }
     }
 
     .barbers__person-name {

@@ -628,6 +628,12 @@ h3::before {
   display: block;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .barbers .barbers__person-photo {
+    width: 450px;
+    height: 346px;
+  }
+}
 .barbers .barbers__person-name {
   font-family: "Open Sans", sans-serif;
   color: rgb(48, 48, 48);
@@ -669,6 +675,12 @@ h3::before {
   fill: rgb(255, 108, 0);
 }
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+    padding: 100px 39px;
+  }
+}
 .gallery .gallery__subtitle {
   color: rgb(48, 48, 48);
   margin-bottom: 71px;
@@ -680,6 +692,22 @@ h3::before {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .gallery .gallery__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.gallery .gallery__item {
+  max-width: 418px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery .gallery__item {
+    width: 330px;
+    height: 360px;
+  }
 }
 
 .booking {

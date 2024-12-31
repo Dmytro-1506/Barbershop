@@ -1,4 +1,8 @@
 .gallery {
+    @include tablet {
+        max-width: 768px;
+        padding: 100px 39px;
+    }
     .gallery__subtitle {
         color: $dark-text-svg-color;
         margin-bottom: 71px;
@@ -11,5 +15,18 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    .gallery__item {
+        max-width: 418px;
+        height: auto;
+        @include tablet {
+            width: 330px;
+            height: 360px;
+        }
     }
 }
