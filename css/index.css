@@ -597,6 +597,12 @@ h3::before {
 .barbers {
   background-color: rgb(247, 247, 247);
 }
+@media screen and (min-width: 768px) {
+  .barbers {
+    max-width: 768px;
+    padding: 100px 159px;
+  }
+}
 .barbers .barbers__subtitle {
   color: rgb(48, 48, 48);
 }
@@ -619,6 +625,7 @@ h3::before {
   gap: 64px;
 }
 .barbers .barbers__person-photo {
+  display: block;
   margin-bottom: 30px;
 }
 .barbers .barbers__person-name {

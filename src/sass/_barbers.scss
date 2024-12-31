@@ -1,5 +1,9 @@
 .barbers {
 background-color: $background-color-2;
+@include tablet {
+    max-width: 768px;
+    padding: 100px 159px;
+}
 
     .barbers__subtitle {
         color: $dark-text-svg-color;
@@ -21,6 +25,7 @@ background-color: $background-color-2;
     }
 
     .barbers__person-photo {
+        display: block;
         margin-bottom: 30px;
     }
 
