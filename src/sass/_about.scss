@@ -1,9 +1,35 @@
 .about {
     border-color: $background-color-1;
+    @include tablet {
+        padding: 100px 39px;
+        max-width: 768px;
+    }
 
     .about__content-box {
         display: flex;
         flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .about__pictures-box {
+            display: none;
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        .about__text-content-box {
+            display: grid;
+        }
+
+        .about__picture {
+            width: 330px;
+            height: 235px;
+        }
         
         .about__subtitle {
             color: $dark-text-svg-color;
@@ -20,8 +46,11 @@
         }
         
         .about__text-1 {
-            @include font($font-Open-Sans, $text-color-4, 400, 16px, 1.62, 0.02);
+            @include font($font-Open-Sans, $text-color-4, 400, 16px, 1.62, 0.2px);
             margin-bottom: 20px;
+            @include tablet {
+                font-size: 18px;
+            }
         }
         
         .about__description {
@@ -34,11 +63,13 @@
             transition-property: background-color, color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            
             &:hover,
             &:focus {
                 color: $text-color-2;
                 background-color: $accent-color-orange;
+            }
+            @include tablet {
+                align-self: flex-end;
             }
         }
     }

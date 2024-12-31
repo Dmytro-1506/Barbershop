@@ -279,9 +279,38 @@ h3::before {
 .about {
   border-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 100px 39px;
+    max-width: 768px;
+  }
+}
 .about .about__content-box {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.about .about__content-box .about__pictures-box {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box .about__pictures-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.about .about__content-box .about__text-content-box {
+  display: grid;
+}
+.about .about__content-box .about__picture {
+  width: 330px;
+  height: 235px;
 }
 .about .about__content-box .about__subtitle {
   color: rgb(48, 48, 48);
@@ -306,8 +335,13 @@ h3::before {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.02;
+  letter-spacing: 0.2px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box .about__text-1 {
+    font-size: 18px;
+  }
 }
 .about .about__content-box .about__description {
   font-family: "Open Sans", sans-serif;
@@ -327,6 +361,11 @@ h3::before {
 .about .about__content-box .about__button:hover, .about .about__content-box .about__button:focus {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 108, 0);
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box .about__button {
+    align-self: flex-end;
+  }
 }
 
 .prices {
