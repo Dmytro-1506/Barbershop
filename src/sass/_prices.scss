@@ -3,6 +3,12 @@
     background: url('../src/images/Prices-background-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    @include tablet {
+        max-width: 768px;
+        background: url('../src/images/Prices-background-tablet.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
     .prices__background {
         background-color: rgba(17, 19, 25, 0.6);
@@ -10,6 +16,9 @@
         width: 100%;
         padding-top: 84px;
         padding-bottom: 84px;
+        @include tablet {
+            padding: 100px 39px;
+        }
     }
 
     .prices__text-content-box {
@@ -25,6 +34,9 @@
     
     .prices__title {
         @include font($font-Raleway, $text-color-2, 700, 40px, 1.17, 1px);
+        @include tablet {
+            font-size: 42px;
+        }
     }
         
     .prices__services {
@@ -40,6 +52,10 @@
         padding-left: 40px;
         padding-right: 20px;
         margin: 0 auto;
+        @include tablet {
+            max-width: 100%;
+            padding: 32px 40px;
+        }
     }
 
     .prices__services-item {
@@ -48,10 +64,13 @@
     }
 
     .prices__service-name {
-        @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
+        @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.2px);
         display: block;
         margin-right: 4px;
         white-space: nowrap;
+        @include tablet {
+            font-size: 18px;
+        }
     }
 
     .prices__deco-line {
@@ -59,13 +78,17 @@
         width: inherit;
         border-bottom: solid 1px rgba(157, 164, 189, 0.12);
         align-self: self-end;
+        margin-bottom: 4px;
     }
                 
     .prices__service-price {
-        @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.02);
+        @include font($font-Open-Sans, $text-color-3, 400, 14px, 1.43, 0.2px);
         display: block;
         margin-left: 4px;
         white-space: nowrap;
+        @include tablet {
+            font-size: 18px;
+        }
     }
     
     .prices__button {
