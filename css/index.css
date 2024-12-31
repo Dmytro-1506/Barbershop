@@ -190,8 +190,9 @@ h3::before {
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;
-    max-width: 690px;
     height: 100vh;
+    max-width: 690px;
+    max-height: 680px;
     min-height: 470px;
     justify-content: space-between;
   }
@@ -279,9 +280,38 @@ h3::before {
 .about {
   border-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 100px 39px;
+    max-width: 768px;
+  }
+}
 .about .about__content-box {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.about .about__content-box .about__pictures-box {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box .about__pictures-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.about .about__content-box .about__text-content-box {
+  display: grid;
+}
+.about .about__content-box .about__picture {
+  width: 330px;
+  height: 235px;
 }
 .about .about__content-box .about__subtitle {
   color: rgb(48, 48, 48);
@@ -306,8 +336,13 @@ h3::before {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.02;
+  letter-spacing: 0.2px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about .about__content-box .about__text-1 {
+    font-size: 18px;
+  }
 }
 .about .about__content-box .about__description {
   font-family: "Open Sans", sans-serif;
@@ -328,6 +363,11 @@ h3::before {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 108, 0);
 }
+@media screen and (min-width: 768px) {
+  .about .about__content-box .about__button {
+    align-self: flex-end;
+  }
+}
 
 .prices {
   padding: 0;
@@ -335,12 +375,25 @@ h3::before {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .prices {
+    max-width: 768px;
+    background: url("../src/images/Prices-background-tablet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .prices .prices__background {
   background-color: rgba(17, 19, 25, 0.6);
   height: 100%;
   width: 100%;
   padding-top: 84px;
   padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .prices .prices__background {
+    padding: 100px 39px;
+  }
 }
 .prices .prices__text-content-box {
   padding: 0 31px;
@@ -357,6 +410,11 @@ h3::before {
   line-height: 1.17;
   letter-spacing: 1px;
 }
+@media screen and (min-width: 768px) {
+  .prices .prices__title {
+    font-size: 42px;
+  }
+}
 .prices .prices__services {
   display: flex;
   flex-direction: column;
@@ -371,6 +429,12 @@ h3::before {
   padding-right: 20px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .prices .prices__services {
+    max-width: 100%;
+    padding: 32px 40px;
+  }
+}
 .prices .prices__services-item {
   display: flex;
   width: 100%;
@@ -381,16 +445,22 @@ h3::before {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
-  letter-spacing: 0.02;
+  letter-spacing: 0.2px;
   display: block;
   margin-right: 4px;
   white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .prices .prices__service-name {
+    font-size: 18px;
+  }
 }
 .prices .prices__deco-line {
   height: 1px;
   width: inherit;
   border-bottom: solid 1px rgba(157, 164, 189, 0.12);
   align-self: self-end;
+  margin-bottom: 4px;
 }
 .prices .prices__service-price {
   font-family: "Open Sans", sans-serif;
@@ -398,10 +468,15 @@ h3::before {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
-  letter-spacing: 0.02;
+  letter-spacing: 0.2px;
   display: block;
   margin-left: 4px;
   white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .prices .prices__service-price {
+    font-size: 18px;
+  }
 }
 .prices .prices__button {
   z-index: 99;
@@ -416,8 +491,20 @@ h3::before {
   background-color: rgb(255, 108, 0);
 }
 
+@media screen and (min-width: 768px) {
+  .benefits {
+    min-width: 768px;
+    padding: 100px 39px;
+  }
+}
 .benefits .benefits__content-box .benefits__text-content {
+  display: block;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .benefits .benefits__content-box .benefits__text-content {
+    max-width: 500px;
+  }
 }
 .benefits .benefits__content-box .benefits__subtitle {
   color: rgb(48, 48, 48);
@@ -446,6 +533,11 @@ h3::before {
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .benefits .benefits__content-box .benefits__flex-content {
+    justify-content: end;
+  }
+}
 .benefits .benefits__content-box .benefits__deco-box-1 {
   display: flex;
   flex-direction: column;
@@ -466,6 +558,11 @@ h3::before {
   text-align: center;
   padding-top: 20px;
   background-color: rgb(247, 247, 247);
+}
+@media screen and (min-width: 768px) {
+  .benefits .benefits__content-box .benefits__deco-item {
+    max-width: 210px;
+  }
 }
 .benefits .benefits__content-box .benefits_amount-box {
   position: relative;

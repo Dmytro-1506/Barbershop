@@ -2,8 +2,9 @@
     padding: 0;
     @include tablet{
         display: flex;
-        max-width: 690px;
         height: 100vh;
+        max-width: 690px;
+        max-height: 680px;
         min-height: 470px;
         justify-content: space-between;
     }
