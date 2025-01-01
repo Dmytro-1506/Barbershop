@@ -912,6 +912,12 @@ h3::before {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    padding: 56px 39px;
+  }
+}
 .footer .footer__copyright {
   font-family: "Open Sans", sans-serif;
   color: rgb(157, 164, 189);
@@ -923,12 +929,23 @@ h3::before {
   display: block;
   min-width: 130px;
 }
+@media screen and (min-width: 768px) {
+  .footer .footer__copyright {
+    align-self: baseline;
+  }
+}
 .footer .footer__social-links-box {
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
   justify-content: end;
   margin-bottom: 35px;
+}
+@media screen and (min-width: 768px) {
+  .footer .footer__social-links-box {
+    align-self: baseline;
+    margin: 0;
+  }
 }
 .footer .footer__deco-line {
   display: inline-block;
