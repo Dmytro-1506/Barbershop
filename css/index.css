@@ -724,11 +724,6 @@ h3::before {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .booking .booking__content-box {
-    padding: 100px 39px;
-  }
-}
-@media screen and (min-width: 768px) {
   .booking .booking__form {
     display: flex;
     flex-wrap: wrap;
@@ -931,7 +926,7 @@ h3::before {
 }
 @media screen and (min-width: 768px) {
   .footer .footer__copyright {
-    align-self: baseline;
+    align-self: center;
   }
 }
 .footer .footer__social-links-box {
@@ -943,7 +938,7 @@ h3::before {
 }
 @media screen and (min-width: 768px) {
   .footer .footer__social-links-box {
-    align-self: baseline;
+    align-self: center;
     margin: 0;
   }
 }
