@@ -16,7 +16,7 @@
         display: block;
         min-width: 130px;
         @include tablet {
-            align-self: baseline;
+            align-self: center;
         }
     }
 
@@ -27,7 +27,7 @@
         justify-content: end;
         margin-bottom: 35px;
         @include tablet {
-            align-self: baseline;
+            align-self: center;
             margin: 0;
         }
     }
