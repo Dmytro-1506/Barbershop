@@ -2,15 +2,17 @@
 
 body {
     width: 100vw;
+    overflow: scroll;
 }
 
 section {
+    width: 100%;
     max-width: 480px;
     margin: 0 auto;
-    padding-top: 84px;
-    padding-bottom: 84px;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding: 84px 31px;
+    @include tablet {
+        max-width: 768px;
+    }
 }
 
 button {

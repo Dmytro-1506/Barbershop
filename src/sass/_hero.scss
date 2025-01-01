@@ -8,6 +8,9 @@
         min-height: 470px;
         justify-content: space-between;
     }
+    @include desktop {
+        max-width: 1170px;
+    }
 
     .hero__sidebar {
         display: none;
@@ -18,9 +21,12 @@
             align-content: end;
             padding-bottom: 40px;
         }
+        @include desktop {
+            width: 68px;
+        }
     }
     
-    .hero__sideba-content-box {
+    .hero__sidebar-content-box {
         display: flex;
         gap: 40px;
         text-align: center;
@@ -61,6 +67,11 @@
             padding-left: 98px;
             padding-top: 272px;
         }
+        @include desktop {
+            background-image: url('../src/images/Hero-desktop-1x.jpg');
+            width: 1070px;
+            height: 680px;
+        }
     }
 
     .hero__subtitle {
@@ -72,11 +83,18 @@
     .hero__title {
         @include font($font-Raleway, $text-color-2, 700, 48px, 1.17, 1px);
         margin-bottom: 20px;
+        @include desktop {
+            font-size: 72px;
+        }
     }
 
     .hero__text {
         display: block;
         width: 320px;
         @include font($font-Open-Sans, $text-color-1, 400, 16px, 1.62, 0.02);
+        @include desktop {
+            width: 360px;
+            font-size: 18px;
+        }
     }
 }
