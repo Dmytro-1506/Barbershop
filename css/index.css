@@ -714,8 +714,20 @@ h3::before {
 .booking {
   background-color: rgb(25, 28, 38);
 }
+@media screen and (min-width: 768px) {
+  .booking {
+    max-width: 768px;
+    padding: 100px 39px;
+  }
+}
 .booking .booking__content-box {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .booking .booking__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .booking .booking__title {
   font-family: "Raleway", sans-serif;
@@ -744,6 +756,13 @@ h3::before {
   color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
 }
+.booking .booking__form .booking__name {
+  width: 330px;
+  margin-right: 30px;
+}
+.booking .booking__form .booking__phone {
+  width: 330px;
+}
 .booking .booking__textarea {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
@@ -761,6 +780,12 @@ h3::before {
 .booking .booking__textarea:hover, .booking .booking__textarea:focus {
   border-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .booking .booking__textarea {
+    width: 690px;
+    height: 76px;
+  }
 }
 .booking .booking__form-button {
   color: rgb(255, 255, 255);
