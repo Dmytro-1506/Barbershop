@@ -241,6 +241,11 @@ h3::before {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1170px;
+  }
+}
 .hero .hero__sidebar {
   display: none;
 }
@@ -253,7 +258,7 @@ h3::before {
     padding-bottom: 40px;
   }
 }
-.hero .hero__sideba-content-box {
+.hero .hero__sidebar-content-box {
   display: flex;
   gap: 40px;
   text-align: center;
