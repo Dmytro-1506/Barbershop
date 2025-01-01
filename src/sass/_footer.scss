@@ -5,12 +5,19 @@
     padding: 44px 31px;
     display: flex;
     justify-content: space-between;
+    @include tablet {
+        max-width: 768px;
+        padding: 56px 39px;
+    }
 
     .footer__copyright {
         @include font($font-Open-Sans, $text-color-3, 600, 11px, 1.36, 1.5px);
         align-self: self-end;
         display: block;
         min-width: 130px;
+        @include tablet {
+            align-self: baseline;
+        }
     }
 
     .footer__social-links-box {
@@ -19,6 +26,10 @@
         row-gap: 20px;
         justify-content: end;
         margin-bottom: 35px;
+        @include tablet {
+            align-self: baseline;
+            margin: 0;
+        }
     }
 
     .footer__deco-line {
