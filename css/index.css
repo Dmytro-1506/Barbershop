@@ -109,6 +109,11 @@ h3::before {
     padding-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 0;
+  }
+}
 .header .header__container {
   max-width: 420px;
   display: flex;
@@ -126,6 +131,7 @@ h3::before {
   .header .header__container {
     max-width: 1170px;
     padding-top: 30px;
+    padding-right: 17px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -258,6 +264,11 @@ h3::before {
     padding-bottom: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero .hero__sidebar {
+    width: 68px;
+  }
+}
 .hero .hero__sidebar-content-box {
   display: flex;
   gap: 40px;
@@ -303,6 +314,13 @@ h3::before {
     padding-top: 272px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero .hero__content-box {
+    background-image: url("../src/images/Hero-desktop-1x.jpg");
+    width: 1070px;
+    height: 680px;
+  }
+}
 .hero .hero__subtitle::before {
   background-color: rgba(157, 164, 189, 0.6);
 }
@@ -315,6 +333,11 @@ h3::before {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .hero .hero__title {
+    font-size: 72px;
+  }
+}
 .hero .hero__text {
   display: block;
   width: 320px;
@@ -324,6 +347,12 @@ h3::before {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.02;
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero__text {
+    width: 360px;
+    font-size: 18px;
+  }
 }
 
 .about {

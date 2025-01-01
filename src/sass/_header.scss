@@ -9,6 +9,9 @@
         padding-right: 39px;
         padding-top: 0;
     }
+    @include desktop {
+        padding: 0;
+    }
     
     .header__container {
         max-width: 420px;
@@ -23,6 +26,7 @@
         @include desktop {
             max-width: 1170px;
             padding-top: 30px;
+            padding-right: 17px;
         }
     }
 
