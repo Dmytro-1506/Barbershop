@@ -109,7 +109,7 @@ h3::before {
     padding-top: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header {
     padding: 0;
   }
@@ -127,7 +127,7 @@ h3::before {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header .header__container {
     max-width: 1170px;
     padding-top: 30px;
@@ -139,7 +139,7 @@ h3::before {
     margin-left: 11px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header .header__logo-link {
     margin-left: 0;
     margin-right: 132px;
@@ -164,7 +164,7 @@ h3::before {
     width: 554px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header .header__nav-box {
     width: 953px;
     justify-content: space-between;
@@ -176,7 +176,7 @@ h3::before {
   margin-top: 52px;
   margin-right: 45px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header .header__nav-list {
     gap: 30px;
     margin-right: 0;
@@ -199,7 +199,7 @@ h3::before {
   text-align: center;
   margin-top: 40px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header .header__contacts-box {
     display: flex;
     flex-direction: row-reverse;
@@ -217,7 +217,7 @@ h3::before {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .header .header__button {
     margin-bottom: 0;
   }
@@ -247,7 +247,7 @@ h3::before {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .hero {
     max-width: 1170px;
   }
@@ -264,7 +264,7 @@ h3::before {
     padding-bottom: 40px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .hero .hero__sidebar {
     width: 68px;
   }
@@ -314,7 +314,7 @@ h3::before {
     padding-top: 272px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .hero .hero__content-box {
     background-image: url("../src/images/Hero-desktop-1x.jpg");
     width: 1070px;
@@ -333,7 +333,7 @@ h3::before {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .hero .hero__title {
     font-size: 72px;
   }
@@ -348,7 +348,7 @@ h3::before {
   line-height: 1.62;
   letter-spacing: 0.02;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .hero .hero__text {
     width: 360px;
     font-size: 18px;
