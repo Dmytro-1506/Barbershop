@@ -3,14 +3,27 @@
         min-width: 768px;
         padding: 100px 39px;
     }
-
+    @include desktop {
+        min-width: 1170px;
+        padding: 120px 0;
+    }
+    
     .benefits__content-box {
+        @include desktop {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
         .benefits__text-content {
             display: block;
             margin-bottom: 44px;
             @include tablet {
                 max-width: 500px;
+            }
+            @include desktop {
+                width: 500px;
             }
         }
 
@@ -35,6 +48,9 @@
             gap: 30px;
             @include tablet {
                 justify-content: end;
+            }
+            @include desktop {
+                margin-right: 130px;
             }
         }
         
@@ -62,6 +78,9 @@
             background-color: $background-color-2;
             @include tablet {
                 max-width: 210px;
+            }
+            @include desktop {
+                max-width: 170px;
             }
         }
 

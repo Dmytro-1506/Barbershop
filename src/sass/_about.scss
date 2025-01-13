@@ -4,6 +4,10 @@
         padding: 100px 39px;
         max-width: 768px;
     }
+    @include desktop {
+        max-width: 1170px;
+        padding: 120px 0;
+    }
 
     .about__content-box {
         display: flex;
@@ -20,15 +24,25 @@
                 flex-direction: column;
                 gap: 30px;
             }
+            @include desktop {
+                flex-direction: row;
+            }
         }
 
         .about__text-content-box {
             display: grid;
+            @include desktop {
+                width: 470px;
+            }
         }
 
         .about__picture {
             width: 330px;
             height: 235px;
+            @include desktop {
+                width: 270px;
+                height: 445px;
+            }
         }
         
         .about__subtitle {
@@ -43,6 +57,10 @@
             width: 305px;
             @include font($font-Raleway, $dark-text-svg-color, 700, 28px, 1.17, 1px);
             margin-bottom: 20px;
+            @include desktop {
+                font-size: 42px;
+                width: 470px;
+            }
         }
         
         .about__text-1 {
