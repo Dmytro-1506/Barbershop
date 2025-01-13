@@ -364,6 +364,12 @@ h3::before {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1170px) {
+  .about {
+    max-width: 1170px;
+    padding: 120px 0;
+  }
+}
 .about .about__content-box {
   display: flex;
   flex-direction: column;
@@ -384,12 +390,28 @@ h3::before {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1170px) {
+  .about .about__content-box .about__pictures-box {
+    flex-direction: row;
+  }
+}
 .about .about__content-box .about__text-content-box {
   display: grid;
+}
+@media screen and (min-width: 1170px) {
+  .about .about__content-box .about__text-content-box {
+    width: 470px;
+  }
 }
 .about .about__content-box .about__picture {
   width: 330px;
   height: 235px;
+}
+@media screen and (min-width: 1170px) {
+  .about .about__content-box .about__picture {
+    width: 270px;
+    height: 445px;
+  }
 }
 .about .about__content-box .about__subtitle {
   color: rgb(48, 48, 48);
@@ -407,6 +429,12 @@ h3::before {
   line-height: 1.17;
   letter-spacing: 1px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1170px) {
+  .about .about__content-box .about__title {
+    font-size: 42px;
+    width: 470px;
+  }
 }
 .about .about__content-box .about__text-1 {
   font-family: "Open Sans", sans-serif;
