@@ -1097,10 +1097,19 @@ h3::before {
 }
 @media screen and (min-width: 1170px) {
   .contacts {
+    position: relative;
+    z-index: 999;
+    padding: 0;
+    height: 0;
+    overflow: visible;
     max-width: 50vw;
-    height: 625px;
-    top: -625px;
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .contacts .contacts__content-box {
+    height: 625px;
+    transform: translateY(-625px);
     padding-top: 130px;
     padding-left: 105px;
   }
@@ -1204,7 +1213,7 @@ h3::before {
   letter-spacing: 0.02;
 }
 
-.footer {
+.footer .footer__content-box {
   max-width: 480px;
   height: 138px;
   margin: 0 auto;
@@ -1213,9 +1222,15 @@ h3::before {
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
-  .footer {
+  .footer .footer__content-box {
     max-width: 768px;
     padding: 56px 39px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .footer .footer__content-box {
+    max-width: 1170px;
+    padding: 56px 0;
   }
 }
 .footer .footer__copyright {

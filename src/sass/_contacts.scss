@@ -5,12 +5,22 @@
         max-width: 768px;
     }
     @include desktop {
+        position: relative;
+        z-index: 999;
+        padding: 0;
+        height: 0;
+        overflow: visible;
         max-width: 50vw;
-        height: 625px;
-        top: -625px;
         margin-right: 0;
-        padding-top: 130px;
-        padding-left: 105px;
+    }
+    
+    .contacts__content-box {
+        @include desktop {
+            height: 625px;
+            transform: translateY(-625px);
+            padding-top: 130px;
+            padding-left: 105px;
+        }
     }
     
     .contacts__background-img {
