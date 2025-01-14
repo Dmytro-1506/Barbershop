@@ -576,7 +576,7 @@ h3::before {
   .prices .prices__services {
     max-width: 100%;
     padding: 32px 40px;
-    overflow: auto;
+    overflow: unset;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -598,7 +598,6 @@ h3::before {
     padding: 30px 20px;
     flex-direction: column;
     gap: 20px;
-    overflow-x: scroll;
   }
 }
 .prices .prices__services-list-1 {
@@ -1093,6 +1092,7 @@ h3::before {
 @media screen and (min-width: 768px) {
   .contacts {
     max-width: 768px;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -1107,11 +1107,26 @@ h3::before {
   }
 }
 @media screen and (min-width: 1170px) {
-  .contacts .contacts__content-box {
+  .contacts .contacts__background {
     height: 625px;
     transform: translateY(-625px);
+    background-image: url(../src/images/Contacts-background-desktop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts .contacts__content-box {
+    padding: 100px 39px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .contacts .contacts__content-box {
+    height: 100%;
+    width: 100%;
     padding-top: 130px;
     padding-left: 105px;
+    background-color: rgba(25, 28, 38, 0.9);
   }
 }
 .contacts .contacts__background-img {
@@ -1123,6 +1138,11 @@ h3::before {
   overflow-x: hidden;
   opacity: 0.1;
   z-index: 1;
+}
+@media screen and (min-width: 1170px) {
+  .contacts .contacts__background-img {
+    display: none;
+  }
 }
 .contacts .contacts__title {
   font-family: "Raleway", sans-serif;
