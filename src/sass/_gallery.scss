@@ -3,11 +3,26 @@
         max-width: 768px;
         padding: 100px 39px;
     }
+    @include desktop {
+        max-width: 100%;
+        padding: 120px 0;
+    }
+
+    .gallery__content-box {
+        @include desktop {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+    }
+
     .gallery__subtitle {
         color: $dark-text-svg-color;
         margin-bottom: 71px;
         &::before {
             background-color: $dark-text-svg-color;
+        }
+        @include tablet {
+            margin-bottom: 44px;
         }
     }
     
@@ -27,6 +42,9 @@
         @include tablet {
             width: 330px;
             height: 360px;
+        }
+        @include desktop {
+            width: 270px;
         }
     }
 }

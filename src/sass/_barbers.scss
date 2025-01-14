@@ -1,9 +1,20 @@
 .barbers {
-background-color: $background-color-2;
-@include tablet {
-    max-width: 768px;
-    padding: 100px 159px;
-}
+    background-color: $background-color-2;
+    @include tablet {
+        max-width: 768px;
+        padding: 100px 159px;
+    }
+    @include desktop {
+        padding: 120px 0;
+        max-width: 100%;
+    }
+    
+    .barbers__content-box {
+        @include desktop {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+    }
 
     .barbers__subtitle {
         color: $dark-text-svg-color;
@@ -22,6 +33,10 @@ background-color: $background-color-2;
         display: flex;
         flex-direction: column;
         gap: 64px;
+        @include desktop {
+            flex-direction: row;
+            gap: 30px;
+        }
     }
 
     .barbers__person-photo {
@@ -29,6 +44,10 @@ background-color: $background-color-2;
         margin-bottom: 30px;
         @include tablet {
             width: 450px;
+            height: 346px;
+        }
+        @include desktop {
+            width: 370px;
             height: 346px;
         }
     }

@@ -1,13 +1,23 @@
 .footer {
-    max-width: 480px;
-    height: 138px;
-    margin: 0 auto;
-    padding: 44px 31px;
-    display: flex;
-    justify-content: space-between;
-    @include tablet {
-        max-width: 768px;
-        padding: 56px 39px;
+    @include desktop {
+        // height: 0;
+    }
+
+    .footer__content-box {
+        max-width: 480px;
+        height: 138px;
+        margin: 0 auto;
+        padding: 44px 31px;
+        display: flex;
+        justify-content: space-between;
+        @include tablet {
+            max-width: 768px;
+            padding: 56px 39px;
+        }
+        @include desktop {
+            max-width: 1170px;
+            padding: 56px 0;
+        }
     }
 
     .footer__copyright {
