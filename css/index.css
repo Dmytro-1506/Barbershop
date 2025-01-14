@@ -804,6 +804,18 @@ h3::before {
     padding: 100px 159px;
   }
 }
+@media screen and (min-width: 1170px) {
+  .barbers {
+    padding: 120px 0;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .barbers .barbers__content-box {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
 .barbers .barbers__subtitle {
   color: rgb(48, 48, 48);
 }
@@ -825,6 +837,12 @@ h3::before {
   flex-direction: column;
   gap: 64px;
 }
+@media screen and (min-width: 1170px) {
+  .barbers .barbers__person-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
 .barbers .barbers__person-photo {
   display: block;
   margin-bottom: 30px;
@@ -832,6 +850,12 @@ h3::before {
 @media screen and (min-width: 768px) {
   .barbers .barbers__person-photo {
     width: 450px;
+    height: 346px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .barbers .barbers__person-photo {
+    width: 370px;
     height: 346px;
   }
 }
