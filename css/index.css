@@ -1419,14 +1419,17 @@ h3::before {
     position: fixed;
     right: 0;
     bottom: 20px;
+    z-index: 9999;
   }
 }
 @media screen and (min-width: 768px) {
   .buttons-section .scroll-buttons-box {
     display: flex;
+    gap: 24px;
     max-width: 690px;
     margin: 0 auto;
-    gap: 24px;
+    padding-right: 20px;
+    justify-content: end;
   }
 }
 .buttons-section .scroll-buttons-box .scroll-button {
@@ -1438,7 +1441,19 @@ h3::before {
   letter-spacing: 1px;
   width: 60px;
   padding: 8px 0;
+  margin: 0;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.6);
   border-radius: 0;
+}
+.buttons-section .scroll-buttons-box .scroll-button:hover, .buttons-section .scroll-buttons-box .scroll-button:focus {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+.buttons-section .scroll-buttons-box .back {
+  text-align: left;
+}
+.buttons-section .scroll-buttons-box .forward {
+  text-align: right;
 }/*# sourceMappingURL=index.css.map */
