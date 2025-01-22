@@ -1432,6 +1432,11 @@ h3::before {
     justify-content: end;
   }
 }
+@media screen and (min-width: 1170px) {
+  .buttons-section .scroll-buttons-box {
+    max-width: 1170px;
+  }
+}
 .buttons-section .scroll-buttons-box .scroll-button {
   font-family: "Open Sans", sans-serif;
   color: rgba(157, 164, 189, 0.6);
@@ -1447,13 +1452,13 @@ h3::before {
   border-radius: 0;
 }
 .buttons-section .scroll-buttons-box .scroll-button:hover, .buttons-section .scroll-buttons-box .scroll-button:focus {
-  color: rgb(255, 255, 255);
-  border-color: rgb(255, 255, 255);
+  color: rgb(255, 108, 0);
+  border-color: rgb(255, 108, 0);
   background-color: transparent;
 }
-.buttons-section .scroll-buttons-box .back {
+.buttons-section .scroll-buttons-box .backButton-js {
   text-align: left;
 }
-.buttons-section .scroll-buttons-box .forward {
+.buttons-section .scroll-buttons-box .forwardButton-js {
   text-align: right;
 }/*# sourceMappingURL=index.css.map */

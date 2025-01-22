@@ -18,6 +18,10 @@
             padding-right: 20px;
             justify-content: end
         }
+        @include desktop {
+            max-width: 1170px;
+        }
+
         .scroll-button {
             @include font ($font-Open-Sans, rgba(157, 164, 189, 0.6), 600, 11px, 1.36, 1px);
             width: 60px;
@@ -28,15 +32,15 @@
             border-radius: 0;
             &:hover,
             &:focus {
-                color: $text-color-2;
-                border-color: $text-color-2;
+                color: $accent-color-orange;
+                border-color: $accent-color-orange;
                 background-color: transparent;
             }
         }
-        .back {
+        .backButton-js {
             text-align: left;
         }
-        .forward {
+        .forwardButton-js {
             text-align: right;
         }
     }
