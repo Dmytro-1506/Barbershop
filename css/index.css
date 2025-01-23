@@ -1301,6 +1301,9 @@ h3::before {
   letter-spacing: 2px;
   margin-left: 40px;
 }
+.footer .footer__link:hover, .footer .footer__link:focus {
+  color: rgb(255, 108, 0);
+}
 
 .mobile-menu__container {
   position: fixed;
