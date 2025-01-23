@@ -56,5 +56,9 @@
     .footer__link {
         @include font($font-Open-Sans, $dark-text-svg-color, 600, 11px, 1.36, 2px);
         margin-left: 40px;
+        &:hover,
+        &:focus {
+            color: $accent-color-orange;
+        }
     }
 }
